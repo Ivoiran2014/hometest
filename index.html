@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="svg/logo-paynah-pro.svg" alt="">
+    </header>
+    
+    <main>
+        <div class="container">
+            <h1>Bonjour, </h1>
+            <div class="login-container">
+                <img src="./svg/lock-light.svg" alt="Key Logo">
+                <form id="login-form">
+                    <input type="text" id="username" name="username" placeholder="Identifiant">
+                    
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Clé d'acces">
+                        <img src="./svg/keyz.svg" 
+                            alt="Key Password Logo" 
+                            class="key-password toggle-password"
+                            onclick="togglePassword()">
+                    </div>
+
+                    <div class="keep-lock">
+                        <label>
+                            <input type="checkbox">
+                            Rester dévérouillé
+                        </label>
+                    </div>
+
+                    <div class="lost-key">
+                        <p>J'ai perdu ma clé</p>
+                    </div>
+                    <button type="submit">Déverouiller</button>
+                </form>
+            </div>
+        </div>
+        <div class="link-container">
+            <a href="#">Ouvrir mon compte</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="left-section">
+            <img src="./svg/globe.svg" alt="Footer Logo">
+            <p>Français</p>
+            <img src="./svg/arrow-down.svg" alt="Footer Logo">
+        </div>
+        
+        <div class="right-section">
+            <p>Copyright © 2023 Paynah. Tous droits reservés |Politique de confidentialité</p>
+        </div>
+
+        <div class="temp-right">
+            <p class="center">Politique de confidentialité</p>
+            <p>Copyright © 2023 Paynah.Tous droits reservés </p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
